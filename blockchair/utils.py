@@ -130,8 +130,8 @@ def handle_response(response):
 
 
 def is_valid_chain(chain):
-    if not (chain is BTC or chain is BCH or chain is LTC or chain is BSV or
-            chain is ETH or chain is DOGE):
+    if not (chain == BTC or chain == BCH or chain == LTC or chain == BSV or
+            chain == ETH or chain == DOGE):
         raise FormatError(
             "Incorrect chain value. Currently supports BTC, BCH, BSV, LTC, ETH, DOGE."
         )
